@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function targetName(name) {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=d18e304704a44a208db102705232908&q=${name}&aqi=n`
+      `https://api.weatherapi.com/v1/current.json?key=d18e304704a44a208db102705232908&q=${name}&aqi=n`
     );
     const data = await response.json();
     return data;
