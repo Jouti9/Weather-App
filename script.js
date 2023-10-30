@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const source = (data) => {
     return `
         <h3 class="text-center text-uppercase">${data.location.name}</h3>
-        <p class="text-center text-secondary">Lorem</p>
+        <p class="text-center text-secondary">${data.current.condition.text}</p>
         <div class="text-center">
             <img src="${data.current.condition.icon}" style="width: 60px;">
         </div>
